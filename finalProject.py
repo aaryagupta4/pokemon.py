@@ -261,15 +261,16 @@ def menu():
     if choice == "2":
         inventory()
 
-    place = input("Where you would like to go? Print the corresponding keys for each place.")
-
-    if place == "1":
+    if choice == "1":
         print("W = Wild Grass")
         print("U = Where you are")
         print("PC = Pokemon Center")
         print("G = Pokemon Gym")
         print("BM = Black Market")
         menu()
+
+    place = input("Where you would like to go? Print the corresponding keys for each place.")
+
 
     if place == "BM":
         blackMarket()
